@@ -1,0 +1,44 @@
+BACKEND 
+    -> lógica de negocio
+    
+    -> BD
+
+    -> Servidor: Recibe peticiones y devuelve respuestas
+        Node.js -> Express
+        Django -> Python
+        Spring Boot -> Java
+
+        TRES MOMENTOS IMPORTANTES DEL SERVIDOR:
+            1.  Llamar a la función express()
+            2. Definir las rutas
+            3. Definir un puerto para escucha
+
+    -> APIs (Interfaz de comunicación entre CLIENTE y SERVIDOR)
+        * Puente de conexión entre Back y Front
+        * Una API: Conjunto de reglas que definen el cómo se puede comunicar un software o aplicación con otro.
+
+        APIs REST y GraphQL son tipos de API con formas de comunicarse diferentes
+
+    INSTALACIONES
+
+        * cors -> bloquea o permite el acceso a los sitios a nuestra API.
+        * express -> framework de nodejs que facilita la creación de servidores web y apis
+        * nodemon -> reinicia el servidor cuando detecta cambios en los archivos del proyecto
+        * cors -> permite manejar VARIABLES DE ENTORNO mediante un .env
+        * mongose -> permite manejar MONGODB de una manera más secilla desde nodejs
+
+FRONTEND
+
+    useState -> estados locales
+    useContext o Redux -> estados globales
+
+    el Front se comunica con el Back con FETCH o AXIOS
+
+    REACT ROUTER -> Manejo de rutas en las SPA
+
+
+NOTA (Diferencia entre import y require):
+    import -> Es más moderno y puede requerir el:
+        type: module
+    
+    require -> Existe desde siempre y no requiere configuraciones previas

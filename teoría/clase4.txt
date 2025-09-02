@@ -1,0 +1,26 @@
+Tanto back como front necesita la protección de rutas
+
+Autenticación -> Verificar identidad
+Autorización -> Después de LOG IN, dar acceso sólo a la info que tiene permitida
+
+Autenticación y Autorización -> Usuarios adecuados vean la info. correcta
+    
+    Se usan JSON Web Tokens (JWT) -> Estándar seguro para transmitir info.
+
+    JWT -> TOKEN (identificador único) en formato JSON
+
+        3 PARTES:
+
+            * HEADER: Tipo de JWT y el algoritmo de cifrado
+            * PAYLOAD: Info de usuario y reclamaciones
+            * SIGNATURE: Garantiza la integridad del token
+
+MERN -> MongoDB Express React Node.js
+
+COMO FUNCIONA WEB TOKEN EN MERN:
+
+    1. Usuario inicia sesión proporcionando credenciales validas
+    2. El servidor genera un JWT firmado y lo envía al cliente
+    3. El cliente almacena el JWT (normalmente el cookies o localstorage)
+    4. En cada solicitud posterior el cliente envía el JWT para autentificarse
+    5. El servidor valida el token enviado para otorgar el acceso.
